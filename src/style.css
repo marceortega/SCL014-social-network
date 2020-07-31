@@ -1,0 +1,19 @@
+body {
+    background-color: #53AA8C;
+}
+
+.contenedorInicio{
+    background-color: white;
+    text-align: center;
+    margin-top: 15%;
+    padding: 5%;
+}
+
+.logotipo{
+    height: 25%;
+    width: 15%;
+}
+
+.fondoAbajo{
+    margin-top: 50%;
+}
