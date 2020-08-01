@@ -1,5 +1,6 @@
 body {
     background-color: #53AA8C;
+    font-family: 'Roboto', sans-serif;
 }
 
 .contenedorInicio{
@@ -7,13 +8,63 @@ body {
     text-align: center;
     margin-top: 15%;
     padding: 5%;
+    padding-top: 15%;
+    
+    
+   
+    
 }
 
 .logotipo{
-    height: 25%;
-    width: 15%;
+    height: 45%;
+    
 }
 
 .fondoAbajo{
-    margin-top: 50%;
+    background-image: url("img/fondoAbajo.png");
+    
+   
+
+    
+    
+}
+
+.logoGoogle{
+    width:5% ;
+
+}
+
+.parrafoGoogle{
+    font-size: 70%;
+}
+
+
+.botones{
+    padding: 2%;
+
+
+}
+.iniciarSesion{
+
+    width: 40%;
+    border-radius: 5px;
+    background-color: #85DCBC;
+    padding: 7px;
+
+}
+
+.registarse{
+    width: 40%;
+    border-radius: 5px;
+    background-color: #85DCBC;
+    padding: 7px;
+
+}
+
+.icono16{
+    width: 8%;
+}
+
+.parrafo16{
+    font-size: 70%;
 }
