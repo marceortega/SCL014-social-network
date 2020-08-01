@@ -4,15 +4,16 @@ body {
 }
 
 .contenedorInicio{
+    width: 85%;
+    height:100%;
     background-color: white;
     text-align: center;
     margin-top: 15%;
+    margin-left: 2%;
     padding: 5%;
-    padding-top: 15%;
-    
-    
-   
-    
+    padding-top: 15%;  
+    display: inline-block;
+    border-radius: 5px;
 }
 
 .logotipo{
@@ -21,12 +22,9 @@ body {
 }
 
 .fondoAbajo{
-    background-image: url("img/fondoAbajo.png");
-    
-   
-
-    
-    
+    background-image:url('img/fondoAbajo.png');
+    height: 100vh;
+    margin-top: -6%;
 }
 
 .logoGoogle{
@@ -50,6 +48,7 @@ body {
     border-radius: 5px;
     background-color: #85DCBC;
     padding: 7px;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -58,7 +57,7 @@ body {
     border-radius: 5px;
     background-color: #85DCBC;
     padding: 7px;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 .icono16{
