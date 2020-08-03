@@ -4,6 +4,7 @@ import { myFunction } from './lib/index.js';
 
 myFunction();
 
+//Esta función sirve para cambiar de pantalla y hacer HTML dinámico 
 
 const startLogin = document.querySelector('#iniciarSesion');
 
