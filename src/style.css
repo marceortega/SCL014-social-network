@@ -34,13 +34,16 @@ body {
 
 .parrafoGoogle{
     font-size: 70%;
+    display: contents;
 }
 
 
 .botones{
     padding: 2%;
+}
 
-
+.btns {
+    padding: 5%;
 }
 .iniciarSesion{
 
@@ -66,4 +69,39 @@ body {
 
 .parrafo16{
     font-size: 70%;
+    display: contents;
+}
+.iniciarsesion {
+    height: 23px;
+    left: 112px;
+    top: 149px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #2B2B2B;
+}
+
+.atras {
+    width: 40%;
+    border-radius: 5px;
+    background-color: #85DCBC;
+    padding: 7px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.email{
+    background: rgba(147, 178, 170, 0.34);
+    border-radius: 5px;
+    height: 28px;
+}
+
+.password{
+    background: rgba(147, 178, 170, 0.34);
+    border-radius: 5px;
+    margin-top: 2%;
+    height: 28px;
 }
