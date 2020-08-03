@@ -39,11 +39,14 @@ body {
 
 
 .botones{
-    padding: 2%;
+    padding: 10%;
+    
 }
 
 .btns {
     padding: 5%;
+    margin-top: 15px;
+    
 }
 .iniciarSesion{
 
@@ -52,15 +55,26 @@ body {
     background-color: #85DCBC;
     padding: 7px;
     font-family: 'Roboto', sans-serif;
+    margin-right: 7px;
 
 }
 
-.registarse{
+.registrarse{
     width: 40%;
     border-radius: 5px;
     background-color: #85DCBC;
     padding: 7px;
     font-family: 'Roboto', sans-serif;
+
+}
+
+.btn-registrarse{
+    width: 40%;
+    border-radius: 5px;
+    background-color: #85DCBC;
+    padding: 7px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 170px;
 }
 
 .icono16{
@@ -82,6 +96,21 @@ body {
     font-size: 24px;
     line-height: 28px;
     
+    
+    color: #2B2B2B;
+}
+
+.tituloRegi {
+    height: 23px;
+    left: 112px;
+    top: 149px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    
     color: #2B2B2B;
 }
 
@@ -91,12 +120,15 @@ body {
     background-color: #85DCBC;
     padding: 7px;
     font-family: 'Roboto', sans-serif;
+    margin-right: 7px;
 }
 
 .email{
     background: rgba(147, 178, 170, 0.34);
     border-radius: 5px;
     height: 28px;
+    margin-top: 2%;
+    width: 276px;
 }
 
 .password{
@@ -104,4 +136,30 @@ body {
     border-radius: 5px;
     margin-top: 2%;
     height: 28px;
+    width: 276px;
+}
+
+.nombre{
+    background: rgba(147, 178, 170, 0.34);
+    border-radius: 5px;
+    height: 28px;
+    width: 132px;
+}
+
+.apellido{
+    background: rgba(147, 178, 170, 0.34);
+    border-radius: 5px;
+    height: 28px;
+    margin-top: 2%;
+    width: 132px;
+}
+
+.mbti{
+    background: rgba(147, 178, 170, 0.34);
+    border-radius: 5px;
+    height: 28px;
+    width: 276px;
+    margin-top: 2%;
+    width: 284px;
+
 }
