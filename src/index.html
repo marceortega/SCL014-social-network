@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
   <div class="contenedorInicio" id="inicio">
     <img src="img/logotipo1.png" class="logotipo" alt="logotipo">
@@ -27,13 +28,42 @@
     </a>
     <p class="parrafo16"> Test 16personalities</p>
     
-
-    
   </div>
   <div  class="fondoAbajo"></div>
 
   
   <script type="module" src="main.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyByubSJI8yvcRzj8IGszA9Kv-vEhpaZWXU",
+    authDomain: "social-network-8b618.firebaseapp.com",
+    databaseURL: "https://social-network-8b618.firebaseio.com",
+    projectId: "social-network-8b618",
+    storageBucket: "social-network-8b618.appspot.com",
+    messagingSenderId: "732668865968",
+    appId: "1:732668865968:web:5029bce7f3aa03cbd07a75",
+    measurementId: "G-5G6YBD0T44"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  const auth = firebase.auth();
+
+
+</script>
+
+  
 </body>
 </html>
 

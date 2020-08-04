@@ -32,5 +32,10 @@
     "serve": "^11.0.2",
     "stylelint": "^10.1.0",
     "stylelint-config-recommended": "^2.2.0"
+  },
+  "dependencies": {
+    "CSSselect": "^0.7.0",
+    "har-validator": "^5.1.5",
+    "production": "0.0.2"
   }
 }
