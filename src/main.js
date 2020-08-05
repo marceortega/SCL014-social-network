@@ -115,13 +115,17 @@ function Registrarse(){
 startRegistrarse.addEventListener('click', Registrarse);
 
 
-/*
-function start() {
-    window.location = 'index.html';
-  }
-  
-  
-  let startButton = document.querySelector('#inicio');
-  startButton.addEventListener('click', start);
-*/
+// Loguear con GOOGLE
+
+const inicioGoogle = document.querySelector('#botongoogle')
+inicioGoogle.addEventListener('click', e => {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    auth.signInWithPopup(provider)
+    .then(result => {
+        console.log('inicio con google')
+    })
+    .catch(err => {
+        console.log(err)
+    })
+});
 
