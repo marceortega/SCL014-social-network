@@ -22,6 +22,7 @@
     <div class="botones">
     <button class="iniciarSesion" id="iniciarSesion">Iniciar sesión</button>
     <button class="registrarse" id="registrarse"> Registrarse</button>
+    <button type="submit" class="btn-registra" id="btn-registra" display="none"> Registrarse</button>
     </div>
 
     <a href="https://www.16personalities.com/es/test-de-personalidad">
@@ -42,6 +43,7 @@
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
 
 <script>
   // Your web app's Firebase configuration
@@ -60,6 +62,7 @@
   firebase.analytics();
 
   const auth = firebase.auth();
+  const fs = firebase.firestore();
 
 
 </script>
