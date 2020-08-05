@@ -9,7 +9,12 @@ myFunction();
 const startLogin = document.querySelector('#iniciarSesion');
 const startRegistrarse = document.querySelector('#registrarse');
 const startAtras = document.querySelector('#atras');
+const startRegistra = document.querySelector('#btn-registra');
 
+
+
+
+// Funcion Logueo
 
 function Login(){
     document.querySelector('#inicio').innerHTML = `
@@ -51,6 +56,8 @@ function Login(){
 startLogin.addEventListener('click', Login);
 
 
+// Funcion Registrarse
+
 function Registrarse(){
     document.querySelector('#inicio').innerHTML = `
     <img src="img/logotipo1.png" class="logotipo" alt="logotipo">
@@ -83,16 +90,20 @@ function Registrarse(){
         </select>
     -->
        <!-- <div class="btns">-->
-        <button type="submit" class="btn-registrarse" id="btn-registrarse">Registrarse</button>
+        <!--<button type="submit" class="btn-registrarse" id="btn-registrarse">Registrarse</button>-->
         <!--</div>-->
+
+        <div class="btons">
+            <button type="submit" class="btn-registro" id="btn-registro" display="block"> Registrarse</button>
+        </div>
         </form>
    <!-- </main>-->
     `
 
-    // Funcion Registrarse
+     // Funcion Registrarse
 
     const sigupForm = document.querySelector('#form-registrarse');
-    sigupForm.addEventListener('submit', (e) => {
+     sigupForm.addEventListener('submit', (e) => {
         e.preventDefault();
 
         const sigupEmail = document.querySelector('#email').value;
@@ -106,13 +117,18 @@ function Registrarse(){
             sigupForm.reset();
 
             console.log('te conectaste guachita')
+            
         });
-    });  
 
+     });
+
+   
 }
 
 
 startRegistrarse.addEventListener('click', Registrarse);
+
+
 
 
 // Loguear con GOOGLE
@@ -129,3 +145,50 @@ inicioGoogle.addEventListener('click', e => {
     })
 });
 
+
+
+
+
+function Paginaprincipal(){
+    document.querySelector('#inicio').innerHTML = `
+    <img src="img/logotipo1.png" class="logotipo" alt="logotipo">
+
+    <main>
+        <section>
+            <div id="search-container">
+                <input type="text" id="nameSearch" placeholder="Search for name">
+            </div>
+            <div class="botonespaprincipal">
+                <button class="loactual" id="loactual">Lo actual</button>
+                <button class="favoritos" id="favoritos"> Favoritos</button>
+                <button class="guardados" id="guardados"> Guardados</button>
+            </div>
+        </section>
+
+        <div class="contenedorprincipal"> 
+            <ul class="posts">
+            </ul>
+        </div>
+
+    </main>
+    `
+
+}
+
+startRegistra.addEventListener('click', Paginaprincipal);
+
+
+    const postList = document.querySelector('.posts')
+
+        auth.onAuthStateChanged(user => {
+            if(user) {
+                fs.collection('usuarios')
+                .get()
+                .then((snapshot) => {
+                    console.log(snapshot.docs)
+            })
+            
+            }else {
+            console.log('auth: no logueado')
+        }
+    })

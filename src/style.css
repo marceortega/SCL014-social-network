@@ -163,3 +163,24 @@ body {
     width: 284px;
 
 }
+
+.btn-registra{
+    display: none;
+    
+}
+
+.btn-registro{
+    width: 40%;
+    border-radius: 5px;
+    background-color: #85DCBC;
+    padding: 7px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.btons{
+    padding: 5%;
+    margin-top: 15px;
+    
+
+}
