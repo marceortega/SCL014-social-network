@@ -121,7 +121,8 @@ function Registrarse(){
         });
 
      });
-
+//let startLoginGoogle = document.querySelector('.botongoogle');
+//startLoginGoogle.addEventListener('click', Paginaprincipal)
    
 }
 
@@ -146,7 +147,8 @@ inicioGoogle.addEventListener('click', e => {
 });
 
 
-
+let startLoginGoogle = document.querySelector('.botongoogle');
+startLoginGoogle.addEventListener('click', Paginaprincipal)
 
 
 function Paginaprincipal(){
