@@ -5,7 +5,7 @@
 //import { Login} from './lib/index.js';
 //import { siginForm } from './lib/firebase.js';
 
-//
+
 
 
  import { myFunction } from './lib/index.js';
@@ -13,7 +13,7 @@
  import { botones } from './lib/view/templateLogin.js';
  //import { registrarse } from './lib/view/templateRegistrarse.js'
 
- //
+ 
  //document.getElementById('root').appendChild(registrarse())
 
     const init = () => {
