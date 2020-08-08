@@ -1,21 +1,21 @@
 // Este es el punto de entrada de tu aplicacion
 
-import { myFunction } from './lib/index.js';
 
-myFunction();
 
 //Esta función sirve para cambiar de pantalla y hacer HTML dinámico 
 
-const startLogin = document.querySelector('#iniciarSesion');
-const startRegistrarse = document.querySelector('#registrarse');
-const startAtras = document.querySelector('#atras');
-const startRegistra = document.querySelector('#btn-registra');
 
 
 
+ import { myFunction } from './lib/index.js';
+ import { changeRoute } from './lib/router.js';
+ import { botones } from './lib/view/templateLogin.js';
+ //import { registrarse } from './lib/view/templateRegistrarse.js'
 
-// Funcion Logueo
+ 
+ //document.getElementById('root').appendChild(registrarse())
 
+<<<<<<< HEAD
 function Login(){
     document.querySelector('#inicio').innerHTML = `
     <img src="img/logotipo1.png" class="logotipo" alt="logotipo">
@@ -188,9 +188,14 @@ startRegistra.addEventListener('click', Paginaprincipal);
                 .get()
                 .then((snapshot) => {
                     console.log(snapshot.docs)
+=======
+    const init = () => {
+        document.getElementById('root').innerHTML = botones()
+        window.addEventListener('hashchange', () => {
+            myFunction();
+            console.log(window.location.hash);
+            changeRoute(window.location.hash)
+>>>>>>> 26643de805c5a26dd93341945e34f9a2821b3b4a
             })
-            
-            }else {
-            console.log('auth: no logueado')
-        }
-    })
+    }
+    window.addEventListener('load', init)
