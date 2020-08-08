@@ -169,6 +169,9 @@ body {
     
 }
 
+.contenedorprincipal {
+    background-color: tomato;
+}
 .btn-registro{
     width: 40%;
     border-radius: 5px;

@@ -10,6 +10,7 @@ const startLogin = document.querySelector('#iniciarSesion');
 const startRegistrarse = document.querySelector('#registrarse');
 const startAtras = document.querySelector('#atras');
 const startRegistra = document.querySelector('#btn-registra');
+const container = document.querySelector ('#formulario');
 
 
 
@@ -36,23 +37,34 @@ function Login(){
     const siginForm = document.querySelector('#form-login');
     siginForm.addEventListener('submit', (e) => {
         e.preventDefault();
-
         const siginEmail = document.querySelector('#email').value;
         const siginPassword = document.querySelector('#password').value;
 
         console.log(siginEmail, siginPassword);
-
-        auth
+         auth
         .signInWithEmailAndPassword(siginEmail, siginPassword)
         .then((userCredential) => {
             siginForm.reset();
-
-            console.log('te conectaste guachita')
-        });
-    });  
-
+            console.log('te logeaste guachita')
+            auth.onAuthStateChanged(user => {
+                if(user) {
+                    //fs.collection('posteos')
+                    //.get()
+                    //.then((snapshot) => {
+                    // console.log(snapshot.docs)
+                    let startRegistra = document.querySelector('.iniciarSesion');
+                    startRegistra.addEventListener('click',Paginaprincipal)
+                   console.log( "auth:Fijate en este logueda")
+                   
+                //})
+                
+                }else {
+                console.log('auth: Fijate en este no logueado')
+            }
+           })
+        });    
+    });     
 }
-
 startLogin.addEventListener('click', Login);
 
 
@@ -99,9 +111,7 @@ function Registrarse(){
         </form>
    <!-- </main>-->
     `
-
      // Funcion Registrarse
-
     const sigupForm = document.querySelector('#form-registrarse');
      sigupForm.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -119,13 +129,8 @@ function Registrarse(){
             console.log('te conectaste guachita')
             
         });
-
-     });
-
-   
+     });  
 }
-
-
 startRegistrarse.addEventListener('click', Registrarse);
 
 
@@ -145,7 +150,8 @@ inicioGoogle.addEventListener('click', e => {
     })
 });
 
-
+let startLoginGoogle = document.querySelector('.botongoogle');
+ startLoginGoogle.addEventListener('click',Paginaprincipal)
 
 
 
@@ -166,29 +172,53 @@ function Paginaprincipal(){
         </section>
 
         <div class="contenedorprincipal"> 
-            <ul class="posts">
+           <h1> mira esto </h1>
+
+        <ul class="posts">
             </ul>
         </div>
 
     </main>
     `
-
+    
 }
 
 startRegistra.addEventListener('click', Paginaprincipal);
 
+/*const postList = document.querySelector(".posts");
+     const setupPosts = (data) => {
+            if (data.length) {
+            let html = "";
+            data.forEach((doc) => {
+            const post = doc.data();
+            const li = `
+            <li class="list">
+            <h5>${post.cuerpo}</h5>
+            <p>${post.titulo}</p>
+            </li>
+             `;
+              html += li;
+             });
+            postList.innerHTML = html;
+            } else {
+            postList.innerHTML = '<h4 class="text">Login to See Posts</h4>';
+             }
+           };
+*/
+    
 
-    const postList = document.querySelector('.posts')
 
-        auth.onAuthStateChanged(user => {
-            if(user) {
-                fs.collection('usuarios')
-                .get()
-                .then((snapshot) => {
-                    console.log(snapshot.docs)
-            })
-            
-            }else {
-            console.log('auth: no logueado')
-        }
-    })
+
+        
+
+    
+    
+    // Logout
+const logout = document.querySelector("#deslogeo");
+
+logout.addEventListener("click", (e) => {
+  e.preventDefault();
+  auth.signOut().then(() => {
+    console.log(" Te saliste?signup out");
+  });
+});
