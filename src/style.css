@@ -1,6 +1,7 @@
 body {
     background-color: #53AA8C;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 .contenedorInicio{
@@ -184,3 +185,69 @@ body {
     
 
 }
+
+#nameSearch{
+    width: 288px;
+    height: 24px;
+}
+
+.botonespaprincipal{
+  
+    margin-top: 15px;
+}
+
+.loactual {
+    width: 28%;
+    border-radius: 5px;
+    background-color: #85DCBC;
+    padding: 7px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.favoritos{
+    width: 28%;
+    border-radius: 5px;
+    background-color: #85DCBC;
+    padding: 7px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.guardados{
+    width: 28%;
+    border-radius: 5px;
+    background-color: #85DCBC;
+    padding: 7px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.ejemplo{
+    list-style: none;
+}
+
+.btn-iniciosesion{
+
+    width: 40%;
+    border-radius: 5px;
+    background-color: #85DCBC;
+    padding: 7px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 7px;
+    text-decoration: none;
+    list-style: none;
+   
+
+}
+
+.btn-registrarse{
+
+    width: 40%;
+    border-radius: 5px;
+    background-color: #85DCBC;
+    padding: 7px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 7px;
+    text-decoration: none;
+
+}
+
