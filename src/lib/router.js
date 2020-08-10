@@ -1,6 +1,8 @@
 import { registrarse } from './view/templateRegistrarse.js';
 import { botones } from './view/templateLogin.js';
-import { Login } from './index.js'
+import { Login } from './index.js';
+import { Paginaprincipal} from './view/templatePosts.js'
+
 
 
 export const changeRoute = (hash) => {
@@ -17,7 +19,9 @@ export const changeRoute = (hash) => {
 
 const showTemplate = (hash) => {
     const containerRoot = document.getElementById('root');
-    const containerRegistrarse = document.getElementById('registrarse');
+    const containerRegistrarse = document.getElementById('root');
+    const containerPost = document.getElementById('root');
+
     containerRoot.innerHTML = botones();
     
     switch (hash) {
@@ -25,8 +29,13 @@ const showTemplate = (hash) => {
             containerRoot.appendChild(Login());
             break;
         case '#/Registrarse':
-            containerRegistrarse.appendChild(registrarse());
+            containerRegistrarse.innerHTML = registrarse();
             break;
+            case '#/Registrar':
+            containerPost.innerHTML = Paginaprincipal();
+                break;
+        //case '#/Atras':
+          //  containerRoot.innerHTML = Login();
         default: 
         containerRoot.innerHTML = `<h2> no existe</h2>`
     }
