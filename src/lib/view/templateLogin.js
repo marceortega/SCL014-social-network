@@ -29,5 +29,7 @@ export const botones = () => {
     <p class="parrafo16"> Test 16personalities</p>
   </div>
     `;
+
     return viewBotones; 
 };
+

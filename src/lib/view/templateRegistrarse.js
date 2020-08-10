@@ -1,4 +1,5 @@
 
+
 export const registrarse = () => {
   const registrar = `
   <div class="contenedorInicio" id="inicio">
@@ -34,6 +35,7 @@ export const registrarse = () => {
        <!-- <div class="btns">-->
         <!--<button type="submit" class="btn-registrarse" id="btn-registrarse">Registrarse</button>-->
         <!--</div>-->
+
 
         <!--<div class="btons">
             <button <a  href="#" onclick="location.href = document.referrer; return false;" class="atras">Atrás</a>

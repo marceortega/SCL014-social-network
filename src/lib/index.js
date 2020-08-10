@@ -3,12 +3,12 @@
 //import { sigupForm, siginForm, inicioGoogle, } from './firebase.js'
 
 
+
 /*export const myFunction = () => {
   // aqui tu codigo
   console.log('Hola mundo!');
 };
 */
-
 
 // Funcion Logueo
 
@@ -41,7 +41,6 @@ export const Login = () => {
     };  
 
     //document.querySelector('#iniciarSesion').addEventListener('click', Logueo);
-
 
 //startLogin.addEventListener('click', Login);
 

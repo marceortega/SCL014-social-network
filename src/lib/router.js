@@ -4,6 +4,7 @@ import { Login } from './index.js';
 import { Paginaprincipal} from './view/templatePosts.js'
 
 
+
 export const changeRoute = (hash) => {
     if (hash === '#/Iniciar-Sesion') {
         return showTemplate(hash)
@@ -20,6 +21,7 @@ const showTemplate = (hash) => {
     const containerRoot = document.getElementById('root');
     const containerRegistrarse = document.getElementById('root');
     const containerPost = document.getElementById('root');
+
     containerRoot.innerHTML = botones();
     
     switch (hash) {

@@ -1,10 +1,8 @@
 // Este es el punto de entrada de tu aplicacion
 
 
-
 //import { Login} from './lib/index.js';
 //import { siginForm } from './lib/firebase.js';
-
 
 
 
@@ -20,9 +18,9 @@
     const init = () => {
         document.getElementById('root').innerHTML = botones()
         window.addEventListener('hashchange', () => {
-            Login();
-            console.log(window.location.hash);
-            changeRoute(window.location.hash)
+        Login();
+         console.log(window.location.hash);
+         changeRoute(window.location.hash)
             })
     }
     window.addEventListener('load', init)
