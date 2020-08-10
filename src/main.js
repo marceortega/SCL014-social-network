@@ -8,9 +8,10 @@
 
 
 
- import { myFunction } from './lib/index.js';
+ //import { myFunction } from './lib/index.js';
  import { changeRoute } from './lib/router.js';
  import { botones } from './lib/view/templateLogin.js';
+ import { Login } from './lib/index.js';
  //import { registrarse } from './lib/view/templateRegistrarse.js'
 
  
@@ -19,7 +20,7 @@
     const init = () => {
         document.getElementById('root').innerHTML = botones()
         window.addEventListener('hashchange', () => {
-            myFunction();
+            Login();
             console.log(window.location.hash);
             changeRoute(window.location.hash)
             })
