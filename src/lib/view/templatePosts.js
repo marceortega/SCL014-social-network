@@ -19,7 +19,8 @@ export const Paginaprincipal = () => {
 
                 <div class="contenedorprincipal" id="inicio"> 
                     <ul class="posts">
-                    dsjfhjsadfhkj
+                    Que usuaria Mas Linda !!!
+                    Estamos trabajando para ti!!!!
                     </ul>
                 </div>
 
