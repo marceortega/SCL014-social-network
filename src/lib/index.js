@@ -24,7 +24,7 @@ export  const Login = () => {
 
         <div class="btns">
         <button <a  href="#" onclick="location.href = document.referrer; return false;" class="atras">Atrás</a>
-        <button type="submit" id='btnLogearse'   class="iniciarSesion">Iniciar sesión</button>
+        <button type="button" id='btnLogearse'   class="iniciarSesion">Iniciar sesión</button>
         </div>
     </form>
     </div>

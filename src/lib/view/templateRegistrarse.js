@@ -34,7 +34,7 @@ export const registrarse = () => {
         </select>
     -->
         <div class="btns">
-        <button type="submit" class="btn-registrarse" id="btn-registrarse">Registrarse</button>
+        <button type="button" class="btn-registrarse" id="btn-registrarse">Registrarse</button>
         </div>
 
         <!--<div class="btons">
