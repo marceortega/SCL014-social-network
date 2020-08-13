@@ -1,4 +1,4 @@
-
+import { registrarse } from './templateRegistrarse.js'
 
 export const Paginaprincipal = () => {
     const posts = `
@@ -24,14 +24,28 @@ export const Paginaprincipal = () => {
                 </div>
 
             </main>
-            <img src="img/previous.png" alt="">
-            <img src="img/house.png" alt="">
-            <img src="img/heart.png" alt="">
+            <div class="btn-imagenes">
+                <img class="previous" src="img/previous.png" alt="">
+                <img class="house" src="img/house.png" alt="">
+                <img class="heart" src="img/heart.png" alt="">
+            </div>
    <!-- </div>-->
   `;
-  return posts;
+
+  window.location.hash = "#/Posts";
+  document.getElementById('root').innerHTML = posts;
+  //LoadPosts();
+
+ // return posts;
 
 };
+/*
+const LoadPosts = () => {
+    // Función que lleva desde logo segunda pagina a primera página
+    const posts = document.getElementById('posts');
+    posts.addEventListener('click', registrarse);
+  };
 
+*/
 
 

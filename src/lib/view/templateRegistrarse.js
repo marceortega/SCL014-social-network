@@ -1,4 +1,5 @@
-
+import { sigupForm, } from '../firebase.js';
+import { Paginaprincipal } from './templatePosts.js';
 
 export const registrarse = () => {
   const registrar = `
@@ -32,10 +33,9 @@ export const registrarse = () => {
             <option value="INFP">INFP </option>
         </select>
     -->
-       <!-- <div class="btns">-->
-        <!--<button type="submit" class="btn-registrarse" id="btn-registrarse">Registrarse</button>-->
-        <!--</div>-->
-
+        <div class="btns">
+        <button type="submit" class="btn-registrarse" id="btn-registrarse">Registrarse</button>
+        </div>
 
         <!--<div class="btons">
             <button <a  href="#" onclick="location.href = document.referrer; return false;" class="atras">Atrás</a>
@@ -43,7 +43,7 @@ export const registrarse = () => {
         </div>
         -->
 
-      <div class="btons">
+      <!--<div class="btons">
         <ul class="ejemplo">
         <li>
             <a class="atras" href="#/Atras" onclick="location.href = document.referrer; return false;">Atrás</a>
@@ -52,15 +52,52 @@ export const registrarse = () => {
             <a class="btn-registro" href="#/Registrar">Registrarse</a>
         </li>
       </ul> 
-      <div>
+      <div>-->
 
 
         </form>
    <!-- </main>-->
    </div>
+   
     `;
 
-return registrar;
+    window.location.hash = "#/Registrarse";
+    document.getElementById('root').innerHTML = registrar;
+    loadRegistrar();
+
+//return registrar;
 
 };
 
+
+ const loadRegistrar = () => {
+  const btnregistro = document.querySelector('#btn-registrarse');
+  btnregistro.addEventListener('click', () => {
+    sigupForm(Paginaprincipal);
+   });
+  }
+
+/*
+  function registro() {
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    const user = {
+      email,
+      password,
+
+    };
+
+    if(email === '' || password === '') {
+      alert('Debe rellenar todos los campos');
+      //console('los campos no deben quedar vacios');
+     }else {
+      sigupForm(Paginaprincipal, user);
+      alert('Te has registrado exitosamente');
+     }
+
+  };
+
+     
+}
+*/

@@ -1,5 +1,9 @@
-export const botones = () => {
-    const viewBotones = `
+import { registrarse } from './templateRegistrarse.js';
+import { signIn} from '../firebase.js';
+import {Login} from '../index.js';
+
+export const inicio = () => {
+    const viewInicio = `
   <div class="contenedorInicio" id="inicio">
         <img src="img/logotipo1.png" class="logotipo" alt="logotipo">
 
@@ -13,12 +17,13 @@ export const botones = () => {
             <button class="registrarse" id="registrarse"> Registrarse</button>
             <button type="button" class="btn-registra" id="btn-registra" display="none"> Registrarse</button> 
         -->
+
           <ul class="ejemplo">
             <li>
-                <a class="btn-iniciosesion" href="#/Iniciar-Sesion">Iniciar Sesion</a>
+                <a class="btn-iniciosesion" id="btn-iniciosesion" href="#/Iniciar-Sesion">Iniciar Sesion</a>
             </li>
             <li>
-                <a class="btn-registrarse" href="#/Registrarse">Registrarse</a>
+                <a class="btn-registrarse" id="btn-registrarse" href="#/Registrarse">Registrarse</a>
             </li>
           </ul> 
       </div>
@@ -29,7 +34,30 @@ export const botones = () => {
     <p class="parrafo16"> Test 16personalities</p>
   </div>
     `;
+    //return viewBotones; 
 
-    return viewBotones; 
+    window.location.hash = "#/";
+    document.getElementById('root').innerHTML = viewInicio;
+    LoadRegistrarFuncion();
+    
 };
+
+const LoadRegistrarFuncion = () => {
+
+    // Función que lleva desde la de inicio a la de registro
+    const btnIniciarSesion = document.querySelector('#btn-iniciosesion');
+    btnIniciarSesion.addEventListener('click', Login);
+    
+
+    const btnRegistrarse = document.querySelector('#btn-registrarse');
+    btnRegistrarse.addEventListener('click', registrarse);
+     
+    
+
+    
+
+   
+};
+ 
+  
 
