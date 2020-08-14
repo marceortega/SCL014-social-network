@@ -1,6 +1,8 @@
 import { registrarse } from './templateRegistrarse.js';
 import { signIn} from '../firebase.js';
+import {inicioGoogle} from '../firebase.js'
 import {Login} from '../index.js';
+import{Paginaprincipal} from './templatePosts.js'
 
 export const inicio = () => {
     const viewInicio = `
@@ -39,7 +41,7 @@ export const inicio = () => {
     window.location.hash = "#/";
     document.getElementById('root').innerHTML = viewInicio;
     LoadRegistrarFuncion();
-    
+    //LoginGoogle();
 };
 
 const LoadRegistrarFuncion = () => {
@@ -53,11 +55,26 @@ const LoadRegistrarFuncion = () => {
     btnRegistrarse.addEventListener('click', registrarse);
      
     
-
+    /*const btnLoginGoogle = document.querySelector('#botongoogle');
+    btnLoginGoogle.addEventListener('click', () => {
+    inicioGoogle(Paginaprincipal);
+    });
+ */
+   const btnLoginGoogle = document.querySelector('#botongoogle');
+   btnLoginGoogle.addEventListener('click', () => {
+   inicioGoogle(Paginaprincipal);
+   });
     
 
    
 };
  
-  
-
+  /*
+const LoginGoogle = () => {
+     
+  const btnLoginGoogle = document.querySelector('#botongoogle');
+  btnLoginGoogle.addEventListener('click', () => {
+  inicioGoogle(Paginaprincipal);
+  });
+ }
+*/

@@ -1,27 +1,4 @@
-/*
-export const sigupForm = (sigupEmail, sigupPassword) => {
-      console.log('aqui entra')
-      firebase.auth().createUserWithEmailAndPassword(sigupEmail, sigupPassword).catch(function(error) {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        // [START_EXCLUDE]
-        if (errorCode == 'auth/weak-password') {
-          alert('The password is too weak.');
-        } else {
-          alert(errorMessage);
-        }
-        console.log(error);
-        // [END_EXCLUDE]
-      });
-      // [END createwithemail]
 
-    }
-
-*/
-    // Funcion Registrarse
-
-//export const sigupForm = document.querySelector('#form-registrarse');
 
 export const sigupForm = (callback) => {
     console.log('aqui entra');
@@ -101,8 +78,8 @@ export const sigupForm = (callback) => {
   };
   */
   
-  /*
   
+  /*
   export const inicioGoogle = document.querySelector('#botongoogle')
   inicioGoogle.addEventListener('click', e => {
       const provider = new firebase.auth.GoogleAuthProvider();
@@ -114,8 +91,8 @@ export const sigupForm = (callback) => {
           console.log(err)
       })
   });
-  */
   
+  */
   //const postList = document.querySelector('.posts')
   
   //const postList = document.querySelector('.inicio');
@@ -157,36 +134,41 @@ export const sigupForm = (callback) => {
   
   // logear con Google --esto lo llamaremos despues en TemplateLogin
  
-//export const logeoGoogle = () => {
- // const provider = new firebase.auth.GoogleAuthProvider();
-  /*firebase.auth.signInWithPopup(provider).then(function(result) {
+export const inicioGoogle = (callback) => {
+  const provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithPopup(provider).then((result) => {
     // This gives you a Google Access Token. You can use it to access the Google API.
-    var token = result.credential.accessToken;
+    //var token = result.credential.accessToken;
     // The signed-in user info.
-    var user = result.user;
-    console.log ('user',user)
+    //var user = result.user;
+    console.log (result.user)
+    callback ();
     
-  }).catch(function(error) {
+  }).catch((error) => {
     // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
+    const errorCode = error.code;
+    //var errorMessage = error.message;
     // The email of the user's account used.
-    var email = error.email;
+    //var email = error.email;
     // The firebase.auth.AuthCredential type that was used.
-    var credential = error.credential;
-    console.log('error',errorMessage)*/
+    //var credential = error.credential;
+   // if (errorCode === 'auth/wrong-password') {
+    //  alert('Contraseña erronea.');
+  //}
+      //     console.log(error);
+       //    console.log('error',errorMessage)
    
-  //    auth.signInWithPopup(provider)
-  //    .then(result => {
-   //       console.log('inicio con google')
-  //    })
-    //  .catch(err => {
-  //        console.log(err)
-    //  })
+     /* auth.signInWithPopup(provider)
+      .then(result => {
+          console.log('inicio con google')
+     })
+     .catch(err => {
+         console.log(err)
+      })
+  */
   
-  
-//};
-
+  })
+};
 
 //loguerase, esto lo llamaremos depsues en el template logearse
 //export const signIn = () => {

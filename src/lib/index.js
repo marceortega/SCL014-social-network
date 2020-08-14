@@ -45,35 +45,6 @@ export  const Login = () => {
    btnLogin.addEventListener('click', () => {
     signIn(Paginaprincipal);
    });
-
-
-
-  
-  //const btnLogin = document.querySelector('#btnLogearse');
-  //btnLogin.addEventListener('click', logeo);
-/*
-  function logeo() {
-    const siginEmail = document.getElementById('email').value;
-    const siginPassword = document.getElementById('password').value;
-
-    console.log(siginEmail, siginPassword);
-
-    const user = {
-      siginEmail ,
-      siginPassword,
-
-    };
-
-    if(siginEmail  === '' || siginPassword === '') {
-      alert('Debe rellenar todos los campos');
-      //console('los campos no deben quedar vacios');
-     }else {
-      signIn(Paginaprincipal, user);
-      alert('Iniciaste Sesion Correctamente');
-      console.log ('pasate a esta parte del logeo')
-     }
-
-  };*/
   }
 
    
