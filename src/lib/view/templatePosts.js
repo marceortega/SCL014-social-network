@@ -1,9 +1,18 @@
 import { registrarse } from './templateRegistrarse.js'
+import { post} from '../firebase.js'
+import {leeme} from '../firebase.js'
 
 export const Paginaprincipal = () => {
-    const posts = `
+    const posts = ` 
+    <h1>crea tu post</h1>
+    <textarea id="inputPost">Ingresa tu post</textarea>
+    <button type="button" id="enviaPost"> enviar post</button>
+    <p id="outputPost"></p>
+    
+    
+    
     <!--<div class="contenedorInicio" id="inicio">-->
-        <img src="img/logotipo1.png" class="logotipo" alt="logotipo">
+       <!-- <img src="img/logotipo1.png" class="logotipo" alt="logotipo">
 
             <main>
                 <section>
@@ -16,37 +25,43 @@ export const Paginaprincipal = () => {
                         <button class="guardados" id="guardados"> Guardados</button>
                     </div>
                 </section>
-
-                <div class="contenedorprincipal" id="inicio"> 
-                    <ul class="posts">
-                    Que usuaria Mas Linda !!!
-                    Estamos trabajando para ti!!!!
+                <textarea  id="cuadroEscrito"> Envia tu Post</textarea>
+                <button type="button" id="botonEnvia">Envia Post</button>
+                <p id="outputPost"> </p>  -->
+        <!--        <div class="contenedorprincipal" id="inicio"> 
+                    <ul class="posts" id="posts">
+                    
                     </ul>
-                </div>
+                </div>   -->
 
-            </main>
-            <div class="btn-imagenes">
+                <!--  </main>
+             <div class="btn-imagenes">
                 <img class="previous" src="img/previous.png" alt="">
                 <img class="house" src="img/house.png" alt="">
                 <img class="heart" src="img/heart.png" alt="">
-            </div>
+            </div> -->
    <!-- </div>-->
+   
   `;
 
   window.location.hash = "#/Posts";
   document.getElementById('root').innerHTML = posts;
-  //LoadPosts();
+  LoadPosts();
 
  // return posts;
 
 };
-/*
-const LoadPosts = () => {
+
+ export const LoadPosts = () => {
+     document.getElementById('enviaPost')
+     .addEventListener('click', () =>{
+        const inputPosts = document.getElementById('inputPost').value;
+        post(inputPosts);
+     })
     // Función que lleva desde logo segunda pagina a primera página
-    const posts = document.getElementById('posts');
-    posts.addEventListener('click', registrarse);
+    
   };
 
-*/
+
 
 
