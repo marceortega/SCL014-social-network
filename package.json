@@ -9,7 +9,7 @@
     "jest"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/marceortega.github.io/SCL014-social-network/tree/proyecto",
+  "homepage": "https://github.com/marceortega.github.io/SCL014-social-network",
   "scripts": {
     "htmlhint": "htmlhint dist/*.html ",
     "eslint": "eslint --ext .js src/ test/",
