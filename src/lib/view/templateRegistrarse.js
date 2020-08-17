@@ -6,14 +6,16 @@ export const registrarse = () => {
   <div class="contenedorInicio" id="inicio">
     <img src="img/logotipo1.png" class="logotipo" alt="logotipo">
     <p class="tituloRegi">Registrarse</p>
-   <!-- <main>-->
+   
+    <!-- <main>-->
         <form id="form-registrarse" class="formato_registrarse">
-      <!--  <input class="nombre" id="nombre" type="text" placeholder="Nombre">
-        <input class="apellido" id="apellido" type="text" placeholder="Apellido"> -->
-        <input class="email" id="email" type="text" placeholder="Correo eléctronico" required>
-        <input class="password" id="password" type="password" placeholder="Contraseña" required>
+      <!--  <input class="input nombre" id="nombre" type="text" placeholder="Nombre">
+        <input class="input apellido" id="apellido" type="text" placeholder="Apellido"> -->
+       
+        <input class="input email" id="email" type="text" placeholder="Correo eléctronico" required>
+        <input class="input password" id="password" type="password" placeholder="Contraseña" required>
 
-     <!--   <select id="mbti" class="mbti">
+     <!--   <select id="mbti" class="input mbti">
             <option value="">MBTI</option>
             <option value="ESTJ">ESTJ </option>
             <option value="ESTP">ESTP </option>
@@ -33,33 +35,12 @@ export const registrarse = () => {
             <option value="INFP">INFP </option>
         </select>
     -->
-        <div class="btns">
-        <button type="button" class="btn-registrarse" id="btn-registrarse">Registrarse</button>
-        </div>
-
-        <!--<div class="btons">
-            <button <a  href="#" onclick="location.href = document.referrer; return false;" class="atras">Atrás</a>
-            <button type="submit" class="btn-registro" id="btn-registro"> Registrarse</button>
-        </div>
-        -->
-
-      <!--<div class="btons">
-        <ul class="ejemplo">
-        <li>
-            <a class="atras" href="#/Atras" onclick="location.href = document.referrer; return false;">Atrás</a>
-        </li>
-        <li>
-            <a class="btn-registro" href="#/Registrar">Registrarse</a>
-        </li>
-      </ul> 
-      <div>-->
-
-
-        </form>
-   <!-- </main>-->
-   </div>
-   
-    `;
+        
+   <div class="contenedor-botones">
+     <a class="boton btn-atras" href="#/Atras" onclick="location.href = document.referrer; return false;">Atrás</a>
+     <button type="button" class="boton btn-registrarse" id="btn-registrarse">Registrarse</button>
+   </div> 
+   `;
 
     window.location.hash = "#/Registrarse";
     document.getElementById('root').innerHTML = registrar;
