@@ -2,6 +2,7 @@ import { inicio } from './view/templateLogin.js';
 import { Login } from './index.js';
 import { registrarse } from './view/templateRegistrarse.js';
 import {Paginaprincipal} from './view/templatePosts.js'
+import { Paginaperfil } from './view/templatePerfil.js';
 
 
 //import { Paginaprincipal} from './view/templatePosts.js'
@@ -49,6 +50,10 @@ export const changeRoute = (hash) => {
              //containerPost.innerHTML = Paginaprincipal();
              Paginaprincipal();
                  break;
+         case '#/Perfil':
+             Paginaperfil(); 
+             break;
+         
          default: 
              inicio();
      }
