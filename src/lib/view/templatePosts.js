@@ -2,6 +2,7 @@ import { registrarse } from './templateRegistrarse.js'
 import { post} from '../firebase.js'
 import {leeme} from '../firebase.js'
 
+
 export const Paginaprincipal = () => {
     const posts = ` 
     <h1>crea tu post</h1>
@@ -45,11 +46,11 @@ export const Paginaprincipal = () => {
   `;
 
   window.location.hash = "#/Posts";
-  document.getElementById('root').innerHTML = posts;
-  LoadPosts();
-
- // return posts;
-
+ document.getElementById('root').innerHTML = posts;
+ 
+ LoadPosts();
+ leeme(); 
+//  return posts;
 };
 
  export const LoadPosts = () => {
@@ -57,6 +58,8 @@ export const Paginaprincipal = () => {
      .addEventListener('click', () =>{
         const inputPosts = document.getElementById('inputPost').value;
         post(inputPosts);
+        
+
      })
     // Función que lleva desde logo segunda pagina a primera página
     
