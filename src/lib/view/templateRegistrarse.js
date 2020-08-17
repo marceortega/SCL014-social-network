@@ -9,13 +9,13 @@ export const registrarse = () => {
    
     <!-- <main>-->
         <form id="form-registrarse" class="formato_registrarse">
-      <!--  <input class="nombre" id="nombre" type="text" placeholder="Nombre">
-        <input class="apellido" id="apellido" type="text" placeholder="Apellido"> -->
+      <!--  <input class="input nombre" id="nombre" type="text" placeholder="Nombre">
+        <input class="input apellido" id="apellido" type="text" placeholder="Apellido"> -->
        
-        <input class="email" id="email" type="text" placeholder="Correo eléctronico" required>
-        <input class="password" id="password" type="password" placeholder="Contraseña" required>
+        <input class="input email" id="email" type="text" placeholder="Correo eléctronico" required>
+        <input class="input password" id="password" type="password" placeholder="Contraseña" required>
 
-     <!--   <select id="mbti" class="mbti">
+     <!--   <select id="mbti" class="input mbti">
             <option value="">MBTI</option>
             <option value="ESTJ">ESTJ </option>
             <option value="ESTP">ESTP </option>
@@ -36,11 +36,9 @@ export const registrarse = () => {
         </select>
     -->
         
-   <div class="btns">
-   
-     <button type="button" class="btn-registrarse" id="btn-registrarse">Registrarse</button>
-     <a class="btn-atras" href="#/Atras" onclick="location.href = document.referrer; return false;">Atrás</a>
-   
+   <div class="contenedor-botones">
+     <a class="boton btn-atras" href="#/Atras" onclick="location.href = document.referrer; return false;">Atrás</a>
+     <button type="button" class="boton btn-registrarse" id="btn-registrarse">Registrarse</button>
    </div> 
    `;
 

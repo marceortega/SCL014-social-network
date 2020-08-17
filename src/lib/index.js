@@ -19,12 +19,12 @@ export  const Login = () => {
     <p class="iniciarsesion">Iniciar Sesión</p>
 
     <form id="form-login" class="formato_login">
-        <input class="email" id="email" type="text" placeholder="Correo eléctronico" required>
-        <input class="password" id="password" type="password" placeholder="Contraseña" required>
+        <input class="input email" id="email" type="text" placeholder="Correo eléctronico" required>
+        <input class="input password" id="password" type="password" placeholder="Contraseña" required>
 
-        <div class="btns">
-        <a  href="#" onclick="location.href = document.referrer; return false;" class="atras">Atrás</a>
-        <button type="button" id='btnLogearse'   class="iniciarSesion">Iniciar sesión</button>
+        <div class="contenedor-botones">
+          <a href="#" onclick="location.href = document.referrer; return false;" class="boton btn-atras">Atrás</a>
+          <button type="button" id='btnLogearse' class="boton iniciarSesion">Iniciar sesión</button>
         </div>
     </form>
     </div>

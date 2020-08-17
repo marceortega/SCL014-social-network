@@ -1,257 +1,174 @@
 body {
-    background-image:url('img/fondoAbajo.png');
-    background-size: 100vw;
-    background-position: bottom center;
-    background-color: #53AA8C;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: 'Roboto', sans-serif;
+  background-image: url("img/fondoAbajo.png");
+  background-size: 100vw;
+  background-position: bottom center;
+  background-color: #53aa8c;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
 }
 
-.contenedorInicio{
-    width: 85%;
-    height:100%;
-    background-color: white;
-    text-align: center;
-    margin-top: 15%;
-    margin-left: 2%;
-    padding: 5%;
-    padding-top: 25%;  
-    display: inline-block;
-    border-radius: 5px;
+/* Clases genéricas */
+.boton {
+  width: 40%;
+  background-color: #85dcbc;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 10px;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #2b2b2b;
+  padding: 10px;
 }
 
-.logotipo{
-    height: 45%;
-    margin: -4% 12% 8% 25%;
-    
+.input {
+  background: #ccc;
+  border: none;
+  border-radius: 5px;
+  height: 28px;
+  margin-top: 2%;
+  width: 276px;
 }
 
-.logoGoogle{
-    width:5% ;
-
+.contenedor-botones {
+  margin: 15% 0;
 }
 
-.parrafoGoogle{
-    font-size: 70%;
-    display: contents;
+/* Inicio */
+.contenedorInicio {
+  width: 85%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  margin-top: 15%;
+  margin-left: 2%;
+  padding: 5%;
+  padding-top: 25%;
+  display: inline-block;
+  border-radius: 5px;
 }
 
-
-.contenedor-botones{
-    margin: 15% 0;
+.logotipo {
+  height: 45%;
+  margin: -4% 12% 8% 25%;
 }
 
-.btns {
-    padding: 5%;
-    margin-top: 15px;
-    
-}
-.iniciarSesion{
-
-    width: 40%;
-    border-radius: 5px;
-    background-color: #85DCBC;
-    padding: 7px;
-    font-family: 'Roboto', sans-serif;
-    margin-right: 7px;
-
+.logoGoogle {
+  width: 5%;
 }
 
-.registrarse{
-    width: 40%;
-    border-radius: 5px;
-    background-color: #85DCBC;
-    padding: 7px;
-    font-family: 'Roboto', sans-serif;
-
+.botongoogle {
+  background: transparent;
+  border: none;
+  color: #1d7a5f;
 }
 
-.icono16{
-    width: 8%;
+.icono16 {
+  width: 8%;
 }
 
-.parrafo16{
-    font-size: 70%;
-    display: contents;
+.parrafo16 {
+  font-size: 70%;
+  display: contents;
 }
 .iniciarsesion {
-    height: 23px;
-    left: 112px;
-    top: 149px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    
-    
-    color: #2B2B2B;
+  height: 23px;
+  left: 112px;
+  top: 149px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #2b2b2b;
 }
 
+/* Registrarse */
 .tituloRegi {
-    height: 23px;
-    left: 112px;
-    top: 149px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    
-    color: #2B2B2B;
+  height: 23px;
+  left: 112px;
+  top: 149px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #2b2b2b;
 }
 
-.btn-atras {
-    width: 40%;
-    border-radius: 5px;
-    background-color: #85DCBC;
-    padding: 7px;
-    font-family: 'Roboto', sans-serif;
-    margin-right: 7px;
+.nombre {
+  width: 132px;
 }
 
-.email{
-    background: rgba(147, 178, 170, 0.34);
-    border-radius: 5px;
-    height: 28px;
-    margin-top: 2%;
-    width: 276px;
+.apellido {
+  margin-top: 2%;
+  width: 132px;
 }
 
-.password{
-    background: rgba(147, 178, 170, 0.34);
-    border-radius: 5px;
-    margin-top: 2%;
-    height: 28px;
-    width: 276px;
+/* Post */
+#nameSearch {
+  width: 288px;
+  height: 24px;
 }
 
-.nombre{
-    background: rgba(147, 178, 170, 0.34);
-    border-radius: 5px;
-    height: 28px;
-    width: 132px;
-}
-
-.apellido{
-    background: rgba(147, 178, 170, 0.34);
-    border-radius: 5px;
-    height: 28px;
-    margin-top: 2%;
-    width: 132px;
-}
-
-.mbti{
-    background: rgba(147, 178, 170, 0.34);
-    border-radius: 5px;
-    height: 28px;
-    width: 276px;
-    margin-top: 2%;
-    width: 284px;
-
-}
-
-.btn-registra{
-    display: none;
-    
-}
-
-.btn-registro{
-    width: 40%;
-    border-radius: 5px;
-    background-color: #85DCBC;
-    padding: 7px;
-    font-family: 'Roboto', sans-serif;
-    
-}
-
-.btons{
-    padding: 5%;
-    margin-top: 15px;
-    
-
-}
-
-#nameSearch{
-    width: 288px;
-    height: 24px;
-}
-
-.botonespaprincipal{
-  
-    margin-top: 15px;
+.botonespaprincipal {
+  margin-top: 15px;
 }
 
 .loactual {
-    width: 28%;
-    border-radius: 5px;
-    background-color: #85DCBC;
-    padding: 7px;
-    font-family: 'Roboto', sans-serif;
+  width: 28%;
+  border-radius: 5px;
+  background-color: #85dcbc;
+  padding: 7px;
+  font-family: "Roboto", sans-serif;
 }
 
-.favoritos{
-    width: 28%;
-    border-radius: 5px;
-    background-color: #85DCBC;
-    padding: 7px;
-    font-family: 'Roboto', sans-serif;
+.favoritos {
+  width: 28%;
+  border-radius: 5px;
+  background-color: #85dcbc;
+  padding: 7px;
+  font-family: "Roboto", sans-serif;
 }
 
-.guardados{
-    width: 28%;
-    border-radius: 5px;
-    background-color: #85DCBC;
-    padding: 7px;
-    font-family: 'Roboto', sans-serif;
+.guardados {
+  width: 28%;
+  border-radius: 5px;
+  background-color: #85dcbc;
+  padding: 7px;
+  font-family: "Roboto", sans-serif;
 }
 
-
-.ejemplo{
-    list-style: none;
+.ejemplo {
+  list-style: none;
 }
 
-.btn-iniciosesion, .btn-registrarse {
-    width: 40%;
-    padding: 10px;
-    background-color: #85DCBC;
-    border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
-    margin: 0 10px;
-    text-decoration: none;
-    white-space: nowrap;    
-    color:#2B2B2B;
-}
-
-#enviaPost {  
-    width: 40%;
-    border-radius: 5px;
-    background-color: #85DCBC;
-    padding: 7px;
-    font-family: 'Roboto', sans-serif;
-    margin-right: 7px;
-    text-decoration: none;
-    white-space: nowrap;   
+#enviaPost {
+  width: 40%;
+  border-radius: 5px;
+  background-color: #85dcbc;
+  padding: 7px;
+  font-family: "Roboto", sans-serif;
+  margin-right: 7px;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 #inputPost {
-    width: 85%;
-    height: 100%;
-    background-color: white;
-    text-align: center;
-    margin-top: 15%;
-    margin-left: 2%;
-    padding: 5%;
-    padding-top: 25%;
-    display: inline-block;
-    border-radius: 5px;
-} 
-
-.botongoogle {
-    background: transparent;
-    border: none;
-    color: #1D7A5F;
+  width: 85%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  margin-top: 15%;
+  margin-left: 2%;
+  padding: 5%;
+  padding-top: 25%;
+  display: inline-block;
+  border-radius: 5px;
 }

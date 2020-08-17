@@ -14,8 +14,8 @@ export const inicio = () => {
         <button type="button"  class="botongoogle" id="botongoogle">Iniciar sesión con Google</button>
 
       <div class="contenedor-botones">
-        <a class="btn-iniciosesion" id="btn-iniciosesion" href="#/Iniciar-Sesion">Iniciar Sesion</a>
-        <a class="btn-registrarse" id="btn-registrarse" href="#/Registrarse">Registrarse</a>
+        <a class="boton btn-iniciosesion" id="btn-iniciosesion" href="#/Iniciar-Sesion">Iniciar Sesion</a>
+        <a class="boton btn-registrarse" id="btn-registrarse" href="#/Registrarse">Registrarse</a>
       </div>
 
     <a href="https://www.16personalities.com/es/test-de-personalidad">
