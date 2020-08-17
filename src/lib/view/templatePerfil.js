@@ -1,14 +1,13 @@
 import { registrarse } from './templateRegistrarse.js'
 import { post} from '../firebase.js'
 import {leeme} from '../firebase.js'
-import {Paginaperfil} from '../view/templatePerfil.js'
 
 
-export const Paginaprincipal = () => {
-    const posts = ` 
+
+export const Paginaperfil = () => {
+    const perfil = ` 
    
-    
-      <div class="contenedorInicio" id="inicio">
+     <div class="contenedorInicio" id="inicio">
        <img src="img/logotipo1.png" class="logotipo" alt="logotipo">
 
             <main>
@@ -22,7 +21,7 @@ export const Paginaprincipal = () => {
                         <button class="loactual" id="loactual">Lo actual</button>
                         <button class="favoritos" id="favoritos"> Favoritos</button>
                         <button class="guardados" id="guardados"> Guardados</button>
-                        <button class= "fotoperfil" id="fotoperfil"> aqui va una foto </button>
+                        
                     </div>
                
                     </section>
@@ -30,30 +29,22 @@ export const Paginaprincipal = () => {
                 <button type="button" id="enviaPost"> Publicar </button>
               
                <p id="outputPost"> </p>  
-       
-               <!--        <div class="contenedorprincipal" id="inicio"> 
-                    <ul class="posts" id="posts">
-                    
-                    </ul>
-                </div>   -->
 
-                <!--  </main>
-             <div class="btn-imagenes">
-                <img class="previous" src="img/previous.png" alt="">
-                <img class="house" src="img/house.png" alt="">
-                <img class="heart" src="img/heart.png" alt="">
-            </div> -->
-   <!-- </div>-->
-   
-  `;
+      <div class="contenedorPerfil" id="contenedor-perfil">
+            <p id="informacion"> Información </p>
+            <p id="trabaja"> </p>
+            
+               
+            
+            
+            `;
 
-  window.location.hash = "#/Posts";
- document.getElementById('root').innerHTML = posts;
- 
+ window.location.hash = "#/Perfil";
+ document.getElementById('root').innerHTML = perfil;
  LoadPosts();
  leeme(); 
 //  return posts;
-LoadPerfil();
+LoadPerfil(); 
 };
 
  export const LoadPosts = () => {
@@ -61,10 +52,18 @@ LoadPerfil();
      .addEventListener('click', () =>{
         const inputPosts = document.getElementById('inputPost').value;
         post(inputPosts);
-        const cargaPerfil = document.querySelector('#fotoperfil');
-        cargaPerfil.addEventListener('click', Paginaperfil);   
+        
 
      })
     // Función que lleva desde logo segunda pagina a primera página
     
+  };
+
+  export const LoadPerfil = () => {
+    document.getElementById('fotoperfil')
+    .addEventListener('click', () =>{
+       const inputPerfil = document.getElementById('contenedor-perfil').value;
+       perfil(inputPerfil);
+    })
+  
   };
