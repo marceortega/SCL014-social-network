@@ -6,7 +6,7 @@ export const Paginaprincipal = () => {
     const posts = ` 
     <h1>crea tu post</h1>
     <textarea id="inputPost">Ingresa tu post</textarea>
-    <button type="button" id="enviaPost"> enviar post</button>
+    <button type="button" id="enviaPost"> Publicar </button>
     <p id="outputPost"></p>
     
     

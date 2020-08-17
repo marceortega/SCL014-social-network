@@ -1,7 +1,11 @@
 body {
+    background-image:url('img/fondoAbajo.png');
+    background-size: 100vw;
+    background-position: bottom center;
     background-color: #53AA8C;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
-    
 }
 
 .contenedorInicio{
@@ -12,20 +16,15 @@ body {
     margin-top: 15%;
     margin-left: 2%;
     padding: 5%;
-    padding-top: 15%;  
+    padding-top: 25%;  
     display: inline-block;
     border-radius: 5px;
 }
 
 .logotipo{
     height: 45%;
+    margin: -4% 12% 8% 25%;
     
-}
-
-.fondoAbajo{
-    background-image:url('img/fondoAbajo.png');
-    height: 100vh;
-    margin-top: -6%;
 }
 
 .logoGoogle{
@@ -39,9 +38,8 @@ body {
 }
 
 
-.botones{
-    padding: 10%;
-    
+.contenedor-botones{
+    margin: 15% 0;
 }
 
 .btns {
@@ -67,15 +65,6 @@ body {
     padding: 7px;
     font-family: 'Roboto', sans-serif;
 
-}
-
-.btn-registrarse{
-    width: 40%;
-    border-radius: 5px;
-    background-color: #85DCBC;
-    padding: 7px;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 170px;
 }
 
 .icono16{
@@ -115,7 +104,7 @@ body {
     color: #2B2B2B;
 }
 
-.atras {
+.btn-atras {
     width: 40%;
     border-radius: 5px;
     background-color: #85DCBC;
@@ -225,8 +214,19 @@ body {
     list-style: none;
 }
 
-.btn-iniciosesion{
+.btn-iniciosesion, .btn-registrarse {
+    width: 40%;
+    padding: 10px;
+    background-color: #85DCBC;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 10px;
+    text-decoration: none;
+    white-space: nowrap;    
+    color:#2B2B2B;
+}
 
+#enviaPost {  
     width: 40%;
     border-radius: 5px;
     background-color: #85DCBC;
@@ -234,19 +234,24 @@ body {
     font-family: 'Roboto', sans-serif;
     margin-right: 7px;
     text-decoration: none;
-    list-style: none;
-
+    white-space: nowrap;   
 }
 
-.btn-registrarse{
-
-    width: 40%;
+#inputPost {
+    width: 85%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 2%;
+    padding: 5%;
+    padding-top: 25%;
+    display: inline-block;
     border-radius: 5px;
-    background-color: #85DCBC;
-    padding: 7px;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    list-style: none;
+} 
 
+.botongoogle {
+    background: transparent;
+    border: none;
+    color: #1D7A5F;
 }
-

@@ -23,7 +23,7 @@ export  const Login = () => {
         <input class="password" id="password" type="password" placeholder="Contraseña" required>
 
         <div class="btns">
-        <button <a  href="#" onclick="location.href = document.referrer; return false;" class="atras">Atrás</a>
+        <a  href="#" onclick="location.href = document.referrer; return false;" class="atras">Atrás</a>
         <button type="button" id='btnLogearse'   class="iniciarSesion">Iniciar sesión</button>
         </div>
     </form>
