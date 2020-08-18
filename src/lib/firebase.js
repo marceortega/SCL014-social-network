@@ -45,20 +45,20 @@ export const inicioGoogle = (callback) => {
   const provider = new firebase.auth.GoogleAuthProvider();
   firebase.auth().signInWithPopup(provider).then((result) => {
     // This gives you a Google Access Token. You can use it to access the Google API.
-    //var token = result.credential.accessToken;
+    //const token = result.credential.accessToken;
     // The signed-in user info.
-    //var user = result.user;
+    //const user = result.user;
     console.log (result.user)
     callback ();
     
   }).catch((error) => {
     // Handle Errors here.
     const errorCode = error.code;
-    //var errorMessage = error.message;
+    //const errorMessage = error.message;
     // The email of the user's account used.
-    //var email = error.email;
+    //const email = error.email;
     // The firebase.auth.AuthCredential type that was used.
-    //var credential = error.credential;
+    //const credential = error.credential;
    // if (errorCode === 'auth/wrong-password') {
     //  alert('Contraseña erronea.');
   //}
@@ -154,8 +154,13 @@ export const perfil=(inputPosts) =>{
   db.collection("perfil").add({
   
   nombre:user.displayName,
+  photoURL:user.photoURL,
+  //mbti:user.display.mbti,   me reclama que no la puede leer
   email:user.email,
+ // ciudad:user.display.City,  me reclama que no la puede leer
   uid:user.uid,
+  
+
 })
 .then(function(docRef) {
   console.log("Document written with ID: ", docRef.id);
@@ -169,18 +174,38 @@ export const perfil=(inputPosts) =>{
 
 export const leemePerfil = () =>{
   console.log ("entra aqui")
-  const db = firebase.firestore();
-  db.collection("post").get().then((querySnapshot) => {
-    querySnapshot.forEach((doc) => {
-        //console.log(`${doc.id} => ${doc.data()}`);
-
-        
-        const muestramePerfil = document.getElementById('trabaja');
-        const infoPerfil = `<h3> queremos ver quien escribe: ${doc.data().nombre? doc.data().nombre : doc.data().email} </h3>
-          <p>${doc.data().perfil}</p>
+ // const db = firebase.firestore();
+  //db.collection("perfil").get().then((querySnapshot) => {
+ //   querySnapshot.forEach((doc) => {
+      const muestramePerfil = document.getElementById('outputPost');
+       
+        firebase.auth().onAuthStateChanged(function(user) {
+          if (user) {
+            // User is signed in.
+            const displayName = user.displayName;
+            const email = user.email;
+            const emailVerified = user.emailVerified;
+            const photoURL = user.photoURL;
+            const isAnonymous = user.isAnonymous;
+            const uid = user.uid;
+            const providerData = user.providerData;
+            // ...
+            const infoPerfil = `<h3> ${displayName} </h3>
+        <h3> ${email} </h3>
+          <p>${uid}</p>
           `;
-          muestrame.innerHTML+=infoPerfil;
-    });
-});
+          muestramePerfil.innerHTML+=infoPerfil;
+          return infoPerfil
+          } else {
+            // User is signed out.
+            console.log ("no es usuario")
+            // ...
+          }
+          
+        });
+             
+        
+        
+   // });
+};
 
-}
