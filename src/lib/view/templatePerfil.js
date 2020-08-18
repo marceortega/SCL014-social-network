@@ -1,6 +1,7 @@
 import { registrarse } from './templateRegistrarse.js'
 import { post} from '../firebase.js'
 import {leeme} from '../firebase.js'
+import {perfil} from '../firebase.js'
 
 
 
@@ -31,8 +32,13 @@ export const Paginaperfil = () => {
                <p id="outputPost"> </p>  
 
       <div class="contenedorPerfil" id="contenedor-perfil">
-            <p id="informacion"> Información </p>
-            <p id="trabaja"> </p>
+            <textarea  id="inputNombre"> Ingresa tu Nombre Completo</textarea>
+            <textarea  id="inputEmail"> Ingresa tu Email</textarea>
+            <textarea  id="inputCiudad"> Ingresa tu Ciudad</textarea>
+            <textarea  id="inputTrabajo"> Ingresa tu Trabajo</textarea>
+            <button type="button" id="enviaPerfil"> Subir Datos </button> 
+
+            
             
                
             
@@ -41,10 +47,11 @@ export const Paginaperfil = () => {
 
  window.location.hash = "#/Perfil";
  document.getElementById('root').innerHTML = perfil;
- LoadPosts();
- leeme(); 
+ //LoadPosts();
+ //leeme(); 
 //  return posts;
-LoadPerfil(); 
+  LoadPerfil(); 
+  leemePerfil();
 };
 
  export const LoadPosts = () => {
@@ -60,9 +67,9 @@ LoadPerfil();
   };
 
   export const LoadPerfil = () => {
-    document.getElementById('fotoperfil')
+    document.getElementById('enviaPerfil')
     .addEventListener('click', () =>{
-       const inputPerfil = document.getElementById('contenedor-perfil').value;
+       const inputPerfil = document.getElementById('inputNombre').value;
        perfil(inputPerfil);
     })
   

@@ -53,7 +53,7 @@ export const Paginaprincipal = () => {
  LoadPosts();
  leeme(); 
 //  return posts;
-LoadPerfil();
+LoadDatosPerfil();
 };
 
  export const LoadPosts = () => {
@@ -68,3 +68,8 @@ LoadPerfil();
     // Función que lleva desde logo segunda pagina a primera página
     
   };
+ //con esto llegue a perfil
+  const LoadDatosPerfil = () => {
+  const btnPerfil = document.querySelector('#fotoperfil');
+  btnPerfil.addEventListener('click', Paginaperfil);
+  }

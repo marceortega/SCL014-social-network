@@ -143,3 +143,44 @@ export const leeme = () =>{
 });
 
 }
+
+//datos para el perfil
+export const perfil=(inputPosts) =>{
+  const db = firebase.firestore();
+  const usuario = () => firebase.auth()
+  .currentUser;
+  const user= usuario();
+  // Add a second document with a generated ID.
+  db.collection("perfil").add({
+  
+  nombre:user.displayName,
+  email:user.email,
+  uid:user.uid,
+})
+.then(function(docRef) {
+  console.log("Document written with ID: ", docRef.id);
+})
+.catch(function(error) {
+  console.error("Error adding document: ", error);
+});
+
+
+}
+
+export const leemePerfil = () =>{
+  console.log ("entra aqui")
+  const db = firebase.firestore();
+  db.collection("post").get().then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+        //console.log(`${doc.id} => ${doc.data()}`);
+
+        
+        const muestramePerfil = document.getElementById('trabaja');
+        const infoPerfil = `<h3> queremos ver quien escribe: ${doc.data().nombre? doc.data().nombre : doc.data().email} </h3>
+          <p>${doc.data().perfil}</p>
+          `;
+          muestrame.innerHTML+=infoPerfil;
+    });
+});
+
+}
