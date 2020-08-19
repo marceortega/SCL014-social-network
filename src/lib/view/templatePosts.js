@@ -26,7 +26,7 @@ export const Paginaprincipal = () => {
             </svg>
             <h1 class="posts-titulo-pagina">MBTI Social</h1>
         </div>
-        <img class="avatar header-avatar" width="50" />
+        <img class="avatar header-avatar" id="fotoperfil" width="50" />
         <div class="search-container">
             <input type="text" id="nameSearch" placeholder="Ingresar nombre">
             <img src="img/magnifying-glass.png" width="20" />
