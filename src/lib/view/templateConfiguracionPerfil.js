@@ -17,7 +17,7 @@ export const PagConfiguracionPerfil = () => {
                     </div>
                     
                     <div class="botonespaprincipal">
-                        <button class="editarPerfil" id="editarPerfil">Editar Perfil</button>
+                        <button class="boton editarPerfil" id="editarPerfil">Editar Perfil</button>
                                                 
                     </div>
                
@@ -30,9 +30,9 @@ export const PagConfiguracionPerfil = () => {
             <textarea  id="inputCiudad"> Ingresa tu Ciudad</textarea>
         <!--    <textarea  id="inputTrabajo"> Ingresa tu Trabajo</textarea>   -->   
 
-            <button type="button" id="enviaPerfil"> Guardar </button> 
-            <button type="button" id="cancelarPerfil"> Cancelar </button> 
-            <button type="button" id="cerrarSesion"> Cerrar Sesion </button> 
+            <button class="boton guardar" type="button" id="enviaPerfil"> Guardar </button> 
+            <button class="boton cancelarperfil" type="button" id="cancelarPerfil"> Cancelar </button> 
+            <button class="boton cerrarsesion" type="button" id="cerrarSesion"> Cerrar Sesion </button> 
 
             
             </div>

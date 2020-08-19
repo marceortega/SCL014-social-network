@@ -19,16 +19,16 @@ export const Paginaperfil = () => {
                     </div>
                     
                     <div class="botonespaprincipal">
-                        <button class="loactual" id="loactual">Lo actual</button>
-                        <button class="favoritos" id="favoritos"> Favoritos</button>
-                        <button class="guardados" id="guardados"> Guardados</button>
-                        <button class="setting" id="setting"> Setting</button>
+                        <button class="boton loactual" id="loactual">Lo actual</button>
+                        <button class="boton favoritos" id="favoritos"> Favoritos</button>
+                        <button class="boton guardados" id="guardados"> Guardados</button>
+                        <button class="boton setting" id="setting"> Setting</button>
                         
                     </div>
                
                     </section>
                 <textarea  id="inputPost"> Ingresa tu Post</textarea>
-                <button type="button" id="enviaPost"> Publicar </button>
+                <button class="boton publicarperfil" type="button" id="enviaPost"> Publicar </button>
               
                <p id="outputPost"> </p>  
 

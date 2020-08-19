@@ -6,6 +6,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 /* Clases genéricas */
@@ -149,26 +150,137 @@ body {
   list-style: none;
 }
 
-#enviaPost {
-  width: 40%;
+/** Logo blanco **/
+.isologo {
+  display: block;
+  width: 100%;
+  padding: 25px;
+}
+
+.isologo svg {
+  display: inline;
+}
+
+.isologo h1 {
+  display: inline-block;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+
+  width: 50px;
+  color: #ffffff;
+}
+
+.avatar {
+  border-radius: 50%;
+  background: #ccc;
+  width: 55px;
+  display: block;
+  height: 55px;
+}
+
+.header-avatar {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.posts-avatar {
+  display: inline-block;
+}
+
+/** Publicaciones **/
+.contenedor-posts {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+.search-container {
+  position: relative;
+  margin: 5px;
+}
+
+.search-container input#nameSearch {
+  border: none;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
   border-radius: 5px;
-  background-color: #85dcbc;
-  padding: 7px;
-  font-family: "Roboto", sans-serif;
-  margin-right: 7px;
-  text-decoration: none;
-  white-space: nowrap;
+  padding: 5px 15px;
+  height: 30px;
+}
+
+.search-container img {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.posts-header {
+  background: #1d7a5f;
+}
+
+.posts-botonera {
+  background: #85dcbc;
+  padding: 1rem 0;
+}
+
+.posts-botonera > .boton {
+  background: #53aa8c;
+  width: 30% !important;
+  margin: 1.2%;
+}
+
+.posts-crear {
+}
+
+#enviaPost {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
 }
 
 #inputPost {
-  width: 85%;
+  width: 70%;
   height: 100%;
-  background-color: white;
-  text-align: center;
-  margin-top: 15%;
-  margin-left: 2%;
+  background-color: #fff;
+  margin: 10px auto 50px;
   padding: 5%;
-  padding-top: 25%;
-  display: inline-block;
   border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tarjeta {
+  position: relative;
+  border: 5px solid #85dcbc;
+  border-radius: 5px;
+  background: #fff;
+  margin: 7.5px 5px;
+}
+
+.publicacion {
+}
+
+.publicacion h3 {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.publicacion p {
+  padding: 10px 15px;
+}
+
+.publicacion .pie-publicacion {
+  background: #c4c4c4;
+  border-radius: 5px;
+  margin: 10px 5px;
+  text-align: left;
+  padding: 5px 10px;
 }
