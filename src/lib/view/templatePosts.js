@@ -1,4 +1,3 @@
-import { registrarse } from './templateRegistrarse.js'
 import { post} from '../firebase.js'
 import {leeme} from '../firebase.js'
 import {Paginaperfil} from '../view/templatePerfil.js'
@@ -53,7 +52,7 @@ export const Paginaprincipal = () => {
  LoadPosts();
  leeme(); 
 //  return posts;
-LoadPerfil();
+ LoadDatosPerfil();
 };
 
  export const LoadPosts = () => {
@@ -61,10 +60,12 @@ LoadPerfil();
      .addEventListener('click', () =>{
         const inputPosts = document.getElementById('inputPost').value;
         post(inputPosts);
-        const cargaPerfil = document.querySelector('#fotoperfil');
-        cargaPerfil.addEventListener('click', Paginaperfil);   
-
      })
-    // Función que lleva desde logo segunda pagina a primera página
+    
     
   };
+ //con esto llegue a perfil
+  const LoadDatosPerfil = () => {
+  const btnPerfil = document.querySelector('#fotoperfil');
+  btnPerfil.addEventListener('click', Paginaperfil);
+  }

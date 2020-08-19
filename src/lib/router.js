@@ -3,6 +3,7 @@ import { Login } from './index.js';
 import { registrarse } from './view/templateRegistrarse.js';
 import {Paginaprincipal} from './view/templatePosts.js'
 import { Paginaperfil } from './view/templatePerfil.js';
+import { PagConfiguracionPerfil } from './view/templateConfiguracionPerfil.js';
 
 
 //import { Paginaprincipal} from './view/templatePosts.js'
@@ -53,7 +54,9 @@ export const changeRoute = (hash) => {
          case '#/Perfil':
              Paginaperfil(); 
              break;
-         
+         case '#/templateConfiguracionPerfil':
+            PagConfiguracionPerfil(); 
+             break;
          default: 
              inicio();
      }

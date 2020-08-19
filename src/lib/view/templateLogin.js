@@ -43,11 +43,7 @@ const LoadRegistrarFuncion = () => {
     btnRegistrarse.addEventListener('click', registrarse);
      
     
-    /*const btnLoginGoogle = document.querySelector('#botongoogle');
-    btnLoginGoogle.addEventListener('click', () => {
-    inicioGoogle(Paginaprincipal);
-    });
- */
+    
    const btnLoginGoogle = document.querySelector('#botongoogle');
    btnLoginGoogle.addEventListener('click', () => {
    inicioGoogle(Paginaprincipal);
@@ -57,12 +53,3 @@ const LoadRegistrarFuncion = () => {
    
 };
  
-  /*
-const LoginGoogle = () => {
-     
-  const btnLoginGoogle = document.querySelector('#botongoogle');
-  btnLoginGoogle.addEventListener('click', () => {
-  inicioGoogle(Paginaprincipal);
-  });
- }
-*/
