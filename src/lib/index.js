@@ -13,6 +13,7 @@ import {Paginaprincipal} from './view/templatePosts.js'
 export  const Login = () => {
     //const divLoguearse = document.createElement ('div');
     const viewLogin = `
+    <div class="inicio-fondo"></div>
     <div class="contenedorInicio" id="inicio">
 
     <img src="img/logotipo1.png" class="logotipo" alt="logotipo">

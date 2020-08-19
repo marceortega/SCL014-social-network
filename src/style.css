@@ -1,15 +1,43 @@
 body {
-  background-image: url("img/fondoAbajo.png");
-  background-size: 100vw;
-  background-position: bottom center;
   background-color: #53aa8c;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
+.inicio-fondo {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("img/fondoAbajo.png");
+  background-size: 100vw;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -9999;
+}
+
 /* Clases genéricas */
+.tarjeta {
+  position: relative;
+  border: 5px solid #85dcbc;
+  border-radius: 5px;
+  background: #fff;
+  margin: 7.5px 5px;
+}
+
+.tarjeta-inicio {
+  position: relative;
+  border-radius: 5px;
+  background: #fff;
+  margin: 7.5px 5px;
+  padding: 5%;
+  width: 85%;
+  text-align: center;
+}
+
 .boton {
   width: 40%;
   background-color: #85dcbc;
@@ -25,16 +53,29 @@ body {
 }
 
 .input {
-  background: #ccc;
+  background: rgba(147, 178, 170, 0.34);
   border: none;
   border-radius: 5px;
   height: 28px;
-  margin-top: 2%;
+  margin: 1% 5px;
   width: 276px;
 }
 
 .contenedor-botones {
   margin: 15% 0;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+}
+
+.fila {
+  display: flex;
+}
+
+.fila .x2 {
+  width: 43%;
 }
 
 /* Inicio */
@@ -227,14 +268,15 @@ body {
 }
 
 .posts-botonera {
+  display: flex;
   background: #85dcbc;
   padding: 1rem 0;
 }
 
 .posts-botonera > .boton {
   background: #53aa8c;
-  width: 30% !important;
   margin: 1.2%;
+  flex: 1;
 }
 
 .posts-crear {
@@ -257,15 +299,13 @@ body {
   vertical-align: middle;
 }
 
-.tarjeta {
-  position: relative;
-  border: 5px solid #85dcbc;
-  border-radius: 5px;
-  background: #fff;
-  margin: 7.5px 5px;
-}
-
 .publicacion {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: #2b2b2b;
 }
 
 .publicacion h3 {
@@ -283,4 +323,43 @@ body {
   margin: 10px 5px;
   text-align: left;
   padding: 5px 10px;
+}
+
+/** Perfil */
+.perfil {
+  display: flex;
+  width: 80%;
+  padding: 15px;
+  margin: 0 auto;
+  border: 10px solid #85dcbb;
+}
+
+.perfil-identificacion {
+  flex: 1;
+}
+
+.perfil-social {
+  display: flex;
+  text-align: center;
+}
+
+.perfil-social p {
+  margin: 0;
+}
+
+.perfil-social h4 {
+  margin: 0;
+}
+
+.perfil-seguidores {
+  width: 50%;
+}
+
+.perfil-seguidos {
+  width: 50%;
+}
+
+.perfil-informacion {
+  background: rgba(147, 178, 170, 0.34);
+  flex: 2;
 }
