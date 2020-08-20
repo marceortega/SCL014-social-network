@@ -4,12 +4,8 @@
 
 * [1. Preámbulo](#1-BIENVENIDOS-A-MBTI-SOCIAL)
 * [2. Resumen del proyecto](#2-CÓMO-SE-USA-MBTI-SOCIAL)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Entrega](#7-entrega)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
+* [3. Objetivos de aprendizaje](#3-CÓMO-FUE-EL-PROCESO-DE-CREACIÓN-DE-MBTI-SOCIAL)
+
 
 ***
 
@@ -24,15 +20,17 @@ MBTI SOCIAL está dirigido a todas aquellas personas que conocen, o que estén i
 En este sentido, el MBTI Social es un recurso que puede ayudar a ciertas personas a comprenderse mejor a sí mismas, y a partir de aquí saber, por ejemplo, mejorar su comunicación con los demás y posiblemente reducir algunos de sus conflictos personales y profesionales. 
 Es una plataforma en donde podrán compartir temas de interés, y conocer distintos puntos de vista respecto a sus opiniones lo que resulta crucial para poder mejorar aspectos de la personalidad. 
 
+# ¿POR QUÉ SE LLAMA MBTI SOCIAL? 
+En atención a que es una página web orientada a todas las personas que conocen o se interesan por este tema. Además  es un nombre que describe fácilmente el objetivo que busca esta red.
 
 ## 2. CÓMO SE USA MBTI SOCIAL
 Para poder entrar a MBTI SOCIAL, sólo se debe acceder por medio del link y realizar su ingreso.
 El usuario al estar en la página principal, podrá registrarse mediante un correo y creación de contraseña; si esta ya registrado Inicia sesión con los mismos datos; o también puede ingresar por medio de su cuenta Google.
 Una vez realizado si ingreso el usuario tiene la posibilidad de postear temas de interés, subirlos fácilmente a la plataforma, de esta manera podrá compartirla, y a la vez poder revisar información de otros usuarios.
- ¿POR QUÉ SE LLAMA MBTI SOCIAL? 
-En atención a que es una página web orientada a todas las personas que conocen o se interesan por este tema. Además  es un nombre que describe fácilmente el objetivo que busca esta red. 
 
- ¿CÓMO FUE EL PROCESO DE CREACIÓN DE MBTI SOCIAL? 
+
+
+## 3. ¿CÓMO FUE EL PROCESO DE CREACIÓN DE MBTI SOCIAL? 
 Primero, analizamos nuestras propias experiencias con respecto a este tema de MBTI,  y observamos que existían vivencias distintas respecto al conocimiento de este, contando con una de nuestras integrantes de equipo que manejaba a la perfección la información, mientras que las demás comenzaban a conocer recientemente esta información. Esto nos permitió plantearnos desde distintos puntos de vista las historias de usuario.
 Para ir recabando información para abordar este proyecto, es que decidimos confeccionar y hacer una encuesta de 4 preguntas, cada una con un listado de opciones para seleccionar. Las preguntas fueron las siguientes: 
 
@@ -68,6 +66,7 @@ Finalmente, en atención a la opinión de varios usuarios, pudimos concluir en e
 ![image](https://user-images.githubusercontent.com/66398028/90697050-87621c80-e24b-11ea-80f6-8c510c5f2831.png)
 ![image](https://user-images.githubusercontent.com/66398028/90697101-9f39a080-e24b-11ea-9cae-62a4c48a72cf.png)
 ![image](https://user-images.githubusercontent.com/66398028/90697138-bd070580-e24b-11ea-82a1-6bb2118d8d67.png)
+
 Actualmente, estamos en proceso de construcción de nuestra página y teniendo los siguientes pendientes: subir imágenes, editar contenido, borrar contenido, y “likear” publicaciones.
 Nuestra página se encuentra operativa permitiendo al usuario, registrarse, iniciar sesión, iniciar sesión con Google, postear y poder revisar información posteada por otros usuarios.
 Queremos realizar en nuestra próxima iteración del proyecto la incorporación de seguidores.
