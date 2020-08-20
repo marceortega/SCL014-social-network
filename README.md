@@ -2,9 +2,9 @@
 
 ## Índice
 
-* [1. Preámbulo](#1-BIENVENIDOS-A-MBTI-SOCIAL)
-* [2. Resumen del proyecto](#2-CÓMO-SE-USA-MBTI-SOCIAL)
-* [3. Objetivos de aprendizaje](#3-CÓMO-FUE-EL-PROCESO-DE-CREACIÓN-DE-MBTI-SOCIAL)
+* [1. Bienvenido a MBTI SOCIAL](#1-BIENVENIDOS-A-MBTI-SOCIAL)
+* [2. Como se usa MBTI Social](#2-CÓMO-SE-USA-MBTI-SOCIAL)
+* [3. Como es el proceso de creacion ](#3-CÓMO-FUE-EL-PROCESO-DE-CREACIÓN-DE-MBTI-SOCIAL)
 
 
 ***
