@@ -42,6 +42,7 @@ Para ir recabando información para abordar este proyecto, es que decidimos conf
 Encuesta: https://docs.google.com/forms/d/e/1FAIpQLSe06oOTuDTkY6v_QMRyn1srjFq4fvQ4nuym-ErE3sXPhqatZQ/viewform
 
 El formulario fue contestado por un total de 18 personas de la siguiente forma: 
+
 ![image](https://user-images.githubusercontent.com/66398028/90695834-38b38300-e249-11ea-9f4e-8b50568d2787.png)
 ![image](https://user-images.githubusercontent.com/66398028/90696092-af508080-e249-11ea-8912-173a3c18c966.png)
 ![image](https://user-images.githubusercontent.com/66398028/90696203-d6a74d80-e249-11ea-8627-961b4d74a027.png)
@@ -54,15 +55,20 @@ El formulario fue contestado por un total de 18 personas de la siguiente forma:
 
 Gracias a las respuestas obtenidas, decidimos avanzar en el diseño de la página con las opciones que más fueron votadas.
 Al tener estás ideas bases, realizamos sketches en lápiz y papel sobre el flujo de información y la presentación que debería tener, los cuales son: 
+
 ![image](https://user-images.githubusercontent.com/66398028/90696707-c479df00-e24a-11ea-9baf-8dc9f77c7d4b.png)
 ![image](https://user-images.githubusercontent.com/66398028/90696806-f9863180-e24a-11ea-82c0-fed92391ea8d.png)
 ![image](https://user-images.githubusercontent.com/66398028/90696858-17ec2d00-e24b-11ea-8ddd-2280213eb762.png)
+
 Después, realizamos prototipos de baja fidelidad en Invision y una versión con interacción para poder testearla con usuarios. 
+
 ![image](https://user-images.githubusercontent.com/66398028/90696935-49fd8f00-e24b-11ea-8ddb-ad88942421f3.png)
 ![image](https://user-images.githubusercontent.com/66398028/90696966-5b469b80-e24b-11ea-9338-2db8b5cc521b.png)
+
 Luego de los testeos con usuarios, hicimos un prototipo de alta fidelidad en Figma 
 Con el cual hicimos la idea básica de lo que queríamos hacer, y lo compartimos con usuarios para saber su opinión y poder iterar el prototipo. 
 Finalmente, en atención a la opinión de varios usuarios, pudimos concluir en este diseño final.
+
 ![image](https://user-images.githubusercontent.com/66398028/90697050-87621c80-e24b-11ea-80f6-8c510c5f2831.png)
 ![image](https://user-images.githubusercontent.com/66398028/90697101-9f39a080-e24b-11ea-9cae-62a4c48a72cf.png)
 ![image](https://user-images.githubusercontent.com/66398028/90697138-bd070580-e24b-11ea-82a1-6bb2118d8d67.png)
